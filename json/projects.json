@@ -1,0 +1,33 @@
+{
+  "sections": ["Connect", "Latest", "Websites", "Games", "Programs", "EXP/EDU"],
+  "connect": {
+    "heading": "Connect",
+    "description": "Let's collaborate and turn your ideas into reality—tell me the problem and I'll build the solution.",
+    "platforms": [
+      {
+        "header": "GitHub",
+        "image": "github.png",
+        "link": {
+          "href": "https://github.com/lzheng47",
+          "anchorText": "GitHub"
+        }
+      },
+      {
+        "header": "LinkedIn",
+        "image": "linkedin.png",
+        "link": {
+          "href": "https://www.linkedin.com/in/lzheng47",
+          "anchorText": "LinkedIn"
+        }
+      },
+      {
+        "header": "Handshake",
+        "image": "handshake.png",
+        "link": {
+          "href": "https://stonybrook.joinhandshake.com/profiles/50001438",
+          "anchorText": "Handshake"
+        }
+      }
+    ]
+  }
+}
