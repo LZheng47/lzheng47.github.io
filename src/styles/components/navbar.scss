@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  padding: 30px;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlogo {
+    width:6em;
+}
+
+.nav-item {
+  flex: 1;
+  display: inline;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+}
+
+.nav-item > a {
+  padding: 10px;
+  font-family: "Outfit";
+  font-size: 20px;
+  color: var(--primary-text-color);
+}

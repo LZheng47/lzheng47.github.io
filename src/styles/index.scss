@@ -1,0 +1,30 @@
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #A10B12;
+    --primary-background-color: #12171D;
+    --secondary-background-color: #14202E;
+    --highlight-color: #6247A4;
+    --header-font-family: "Outfit";
+    --text-font-family: "Roboto";
+
+    font-family: var(--text-font-family);
+    line-height: 1.5;
+
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+html, body{
+    max-width: 100vw;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+a{
+    text-decoration: none;
+}
