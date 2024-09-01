@@ -1,5 +1,4 @@
 {
-  "sections": ["Connect", "Latest", "Websites", "Games", "Programs", "EXP/EDU"],
   "connect": {
     "heading": "Connect",
     "description": "Let's collaborate and turn your ideas into reality—tell me the problem and I'll build the solution.",
@@ -26,6 +25,73 @@
         "link": {
           "href": "https://stonybrook.joinhandshake.com/profiles/50001438",
           "anchorText": "Handshake"
+        }
+      }
+    ]
+  },
+  "latest": {
+    "heading": "Latest",
+    "description": "Discover my most recent projects and achievements, ranging from unique websites to entertaining games.",
+    "projects": []
+  },
+  "websites": {
+    "heading": "Websites",
+    "description": "Explore a collection of websites I've designed and developed. Press the play button to view each website, & scroll down on the left to see more.",
+    "projects": [
+      {
+        "header": "Penthouse In The Sky",
+        "description": "A virtual reality / simulation world of a penthouse, coded in AFrame and features various 3D models. Inspired by The Penthouse: War in Life K-drama.",
+        "tags": ["A-Frame", "JavaScript", "HTML/CSS"],
+        "date": {
+          "year": "2023",
+          "month": "December"
+        },
+        "image": "penthouse_in_the_sky.png",
+        "link": {
+          "href": "https://github.com/LZheng47/VR_PenthouseInTheSky"
+        }
+      },
+      {
+        "header": "Stress Dueling",
+        "description": "2-player duel game made with auditory & image recognition machine learning (Google Teachable Machine) and OOP.",
+        "tags": [
+          "Google Teachable Machine Image & Audio Libraries",
+          "JavaScript",
+          "HTML/CSS"
+        ],
+        "date": {
+          "year": "2023",
+          "month": "March"
+        },
+        "image": "stress_dueling.png",
+        "link": {
+          "href": "https://github.com/LZheng47/Stress-Dueling"
+        }
+      },
+      {
+        "header": "Soul Knight Guide",
+        "description": "A guide on Soul Knight, a mobile game, showcased using a database & web server through SQL & Java",
+        "tags": ["SQL", "SQLite", "Java", "JavaScript", "HTML/CSS"],
+        "date": {
+          "year": "2023",
+          "month": "March"
+        },
+        "image": "soul_knight_guide.png",
+        "link": {
+          "href": "https://github.com/LZheng47/SoulKnightGuide"
+        }
+      },
+      {
+        "header": "China Info",
+        "description": "A website that presents interesting information about Chinese culture and geography.",
+        "tags": ["HTML/CSS"],
+        "date": {
+          "year": "2022",
+          "month": "April"
+        },
+        "image": "china_info.png",
+        "link": {
+          "href": "https://github.com/LZheng47/ChinaInfo"
         }
       }
     ]
