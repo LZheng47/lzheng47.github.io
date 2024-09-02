@@ -8,15 +8,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  position: fixed;
+  position: absolute;
   height: 100vh;
   opacity: 50%;
   mix-blend-mode: color-dodge;
 }
 
+#hero-ui{
+  height: 80vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 #hero {
   width: 100%;
-  height: 100vh;
 }
 
 #hero-content {
@@ -29,14 +35,16 @@
 
 #hero-content-left {
   display: flex;
+  // margin-bottom:4rem;
+  // margin-top:6rem;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
 }
 
 #hero-content-left h3,
 #hero-content-left p {
   opacity: 77%;
-  font-size: pxToRem(27);
+  font-size: pxToRem(25);
   margin: 0;
 }
 
@@ -55,8 +63,13 @@
 
 #hero-content-right {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding:2.5rem 0 2.5rem 0;
 }
 
 #hero-content-right img {
+  position:absolute;
   width: 100%;
 }

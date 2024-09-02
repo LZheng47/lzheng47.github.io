@@ -13,13 +13,13 @@ function Navbar({ links }: Props) {
         activeKey="/home"
         onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
       >
-        {links.map((link) =>
+        {links.map((link, index) =>
           link == "logo" ? (
-            <Nav.Item>
+            <Nav.Item key={index}>
               <img className="navlogo" src="/images/logo.png" />
             </Nav.Item>
           ) : (
-            <Nav.Item>
+            <Nav.Item key={index}>
               <Nav.Link
                 className="navButton"
                 href={"/#" + link.replace(/[\s\W]/g, "").toLowerCase()}

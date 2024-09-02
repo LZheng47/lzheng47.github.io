@@ -1,5 +1,6 @@
 import "./styles/hero.scss";
 import Navbar from "./components/Navbar";
+import MusicPlayer from "./components/MusicPlayer";
 
 const navitems = [
   "Connect",
@@ -18,19 +19,22 @@ function App() {
       <div id="grid">
         <div id="hero">
           <Navbar links={navitems} />
-          <div id="hero-content">
-            <div id="hero-content-left">
-              <h3> Hey! My name is </h3>
-              <h1> Lily Zheng </h1>
-              <p>
-                A passionate computer programmer with experience in
-                <strong>Python</strong>, <strong>Java</strong>, &
-                <strong>Web Development</strong>.
-              </p>
+          <div id="hero-ui">
+            <div id="hero-content">
+              <div id="hero-content-left">
+                <h3> Hey! My name is </h3>
+                <h1> Lily Zheng </h1>
+                <p>
+                  A passionate computer programmer with experience in
+                  <strong> Python</strong>, <strong>Java</strong>, &
+                  <strong> Web Development</strong>.
+                </p>
+              </div>
+              <div id="hero-content-right">
+                <img src="/images/logo.png" />
+              </div>
             </div>
-            <div id="hero-content-right">
-              <img src="/images/logo.png" />
-            </div>
+            <MusicPlayer start_time="20:05" end_time="20:24"/>
           </div>
         </div>
       </div>
