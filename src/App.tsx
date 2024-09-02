@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/hero.scss";
 import Navbar from "./components/Navbar";
 
 const navitems = [
@@ -14,7 +14,26 @@ const navitems = [
 function App() {
   return (
     <>
-      <Navbar links={navitems} />
+      <div id="hero-background"></div>
+      <div id="grid">
+        <div id="hero">
+          <Navbar links={navitems} />
+          <div id="hero-content">
+            <div id="hero-content-left">
+              <h3> Hey! My name is </h3>
+              <h1> Lily Zheng </h1>
+              <p>
+                A passionate computer programmer with experience in
+                <strong>Python</strong>, <strong>Java</strong>, &
+                <strong>Web Development</strong>.
+              </p>
+            </div>
+            <div id="hero-content-right">
+              <img src="/images/logo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

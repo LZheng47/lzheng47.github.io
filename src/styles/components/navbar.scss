@@ -1,25 +1,25 @@
+@import "../utils.scss";
+
 .navbar {
   display: flex;
-  padding: 30px;
-  vertical-align: center;
-  justify-content: center;
+  padding: 2rem 0 2rem 0;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .navlogo {
-    width:6em;
+  width: 6rem;
 }
 
 .nav-item {
-  flex: 1;
   display: inline;
-  padding: 0px 20px 0px 20px;
   text-align: center;
 }
 
 .nav-item > a {
-  padding: 10px;
+  padding: 0.5rem 0 0.5rem 0;
   font-family: "Outfit";
-  font-size: 20px;
+  font-size: pxToRem(18);
   color: var(--primary-text-color);
 }
