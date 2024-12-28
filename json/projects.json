@@ -32,7 +32,7 @@
   "latest": {
     "heading": "Latest",
     "description": "Discover my most recent projects and achievements, ranging from unique websites to entertaining games.",
-    "projects": []
+    "projects": ["websites/projects/0", "websites/projects/1", "websites/projects/2"]
   },
   "websites": {
     "heading": "Websites",
@@ -96,4 +96,5 @@
       }
     ]
   }
+
 }

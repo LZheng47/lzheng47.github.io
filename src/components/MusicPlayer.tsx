@@ -16,12 +16,12 @@ function MusicPlayer({ start_time, end_time }: Props) {
     previous: [() => console.log("previous")],
     play: [() => setPlay(!isPlay), isPlay],
     next: [() => console.log("next")],
-    loop: [() => setLoop(!isLoop), isLoop]
+    loop: [() => setLoop(!isLoop), isLoop],
   };
 
   function MusicPlayerControl(e, control) {
-    function changeControlActive(control: string, isActive: boolean) : string{
-      if(isActive){
+    function changeControlActive(control: string, isActive: boolean): string {
+      if (isActive) {
         return control + " music-ui-active";
       }
       return control + " music-ui-inactive";
@@ -29,13 +29,16 @@ function MusicPlayer({ start_time, end_time }: Props) {
 
     console.log(e);
     music_controls[control][0]();
-    
-    if (control === "shuffle" || control === "loop" || control === "play"){
-      e.target.className = changeControlActive(control, music_controls[control][1]);
-      if(control === "play"){
-        if(isPlay){
+
+    if (control === "shuffle" || control === "loop" || control === "play") {
+      e.target.className = changeControlActive(
+        control,
+        music_controls[control][1]
+      );
+      if (control === "play") {
+        if (isPlay) {
           e.target.src = "/images/music/pause.png";
-        }else{
+        } else {
           e.target.src = "/images/music/play.png";
         }
       }

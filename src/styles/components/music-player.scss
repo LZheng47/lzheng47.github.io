@@ -31,41 +31,44 @@
   opacity: 65%;
 }
 
-.music-controls-container{
-    display:flex;
-    width:60%;
-    justify-content: space-between;
-    align-items: center;
-    align-self:center;
+.music-controls-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
 }
 
-.music-controls-container > img{
-    opacity: 75%;
+.music-controls-container > img {
+  opacity: 75%;
 }
 
-.music-controls-container .loop{
-    width:pxToRem(25);
+.music-controls-container .loop {
+  width: pxToRem(25);
 }
 
-.music-controls-container .shuffle{
-    width:pxToRem(30);
+.music-controls-container .shuffle {
+  width: pxToRem(30);
 }
 
-.music-controls-container .previous, .music-controls-container .next{
-    width:pxToRem(20);
+.music-controls-container .previous,
+.music-controls-container .next {
+  width: pxToRem(20);
 }
 
-.music-controls-container .play, .music-controls-container .pause{
-    width:pxToRem(45);
+.music-controls-container .play,
+.music-controls-container .pause {
+  width: pxToRem(45);
 }
 
-.music-ui{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+.music-ui {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.music-controls-container .music-ui-active{
-    opacity:75%;
-    filter: invert(8%) sepia(100%) saturate(4784%) hue-rotate(352deg) brightness(95%) contrast(99%);
+.music-controls-container .music-ui-active {
+  opacity: 75%;
+  filter: invert(8%) sepia(100%) saturate(4784%) hue-rotate(352deg)
+    brightness(95%) contrast(99%);
 }

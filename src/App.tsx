@@ -1,6 +1,10 @@
+import projectData from "../json/projects.json";
 import "./styles/hero.scss";
 import Navbar from "./components/Navbar";
 import MusicPlayer from "./components/MusicPlayer";
+import Section from "./components/Section";
+import Connect from "./components/Connect.tsx";
+import Latest from "./components/Latest.tsx";
 
 const navitems = [
   "Connect",
@@ -34,9 +38,21 @@ function App() {
                 <img src="/images/logo.png" />
               </div>
             </div>
-            <MusicPlayer start_time="20:05" end_time="20:24"/>
+            <MusicPlayer start_time="20:05" end_time="20:24" />
           </div>
         </div>
+        <Section
+          heading={projectData.connect.heading}
+          description={projectData.connect.description}
+        >
+          <Connect platforms={projectData.connect.platforms}/>
+        </Section>
+        <Section
+          heading={projectData.latest.heading}
+          description={projectData.latest.description}
+        >
+          <Latest projects={projectData.latest.projects}/>
+        </Section>
       </div>
     </>
   );

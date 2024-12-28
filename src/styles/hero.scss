@@ -14,9 +14,9 @@
   mix-blend-mode: color-dodge;
 }
 
-#hero-ui{
+#hero-ui {
   height: 80vh;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -38,7 +38,7 @@
   // margin-bottom:4rem;
   // margin-top:6rem;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
 }
 
 #hero-content-left h3,
@@ -65,11 +65,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position:relative;
-  padding:2.5rem 0 2.5rem 0;
+  position: relative;
+  padding: 2.5rem 0 2.5rem 0;
 }
 
 #hero-content-right img {
-  position:absolute;
+  position: absolute;
   width: 100%;
 }
