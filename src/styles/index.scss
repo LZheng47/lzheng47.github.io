@@ -1,9 +1,10 @@
 :root {
   --primary-text-color: #ffffff;
   --secondary-text-color: #a10b12;
+  --tertiary-text-color: red;
   --primary-background-color: #12171d;
   --secondary-background-color: #14202e;
-  --highlight-color: #6247a4;
+  --highlight-color: #784beb;
   --header-font-family: "Outfit";
   --text-font-family: "Roboto";
 
@@ -32,5 +33,5 @@ a {
 #grid {
   margin-left: auto;
   margin-right: auto;
-  width: 70vw;
+  width: 75vw;
 }

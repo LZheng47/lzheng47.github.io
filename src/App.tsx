@@ -38,7 +38,7 @@ function App() {
                 <img src="/images/logo.png" />
               </div>
             </div>
-            <MusicPlayer start_time="20:05" end_time="20:24" />
+            <MusicPlayer start_time="20:05" end_time="20:25" />
           </div>
         </div>
         <Section
@@ -51,7 +51,7 @@ function App() {
           heading={projectData.latest.heading}
           description={projectData.latest.description}
         >
-          <Latest projects={projectData.latest.projects}/>
+          <Latest/>
         </Section>
       </div>
     </>

@@ -32,7 +32,7 @@
   "latest": {
     "heading": "Latest",
     "description": "Discover my most recent projects and achievements, ranging from unique websites to entertaining games.",
-    "projects": ["websites/projects/0", "websites/projects/1", "websites/projects/2"]
+    "projects": ["websites/projects/0", "websites/projects/0", "websites/projects/0"]
   },
   "websites": {
     "heading": "Websites",
@@ -46,9 +46,10 @@
           "year": "2023",
           "month": "December"
         },
-        "image": "penthouse_in_the_sky.png",
+        "image": ["bathroom.png", "chill_room.png", "dining_room.png", "living_room.png"],
         "link": {
-          "href": "https://github.com/LZheng47/VR_PenthouseInTheSky"
+          "github_repo": "https://github.com/LZheng47/VR_PenthouseInTheSky",
+          "live_demo": "https://lzheng47.github.io/VR_PenthouseInTheSky/"
         }
       },
       {

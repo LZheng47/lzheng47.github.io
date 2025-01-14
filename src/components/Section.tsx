@@ -13,7 +13,7 @@ function Section({ heading, description, children }: Props) {
     <>
       <div className="section" id={heading.toLowerCase()}>
         <div className="section-desc">
-          <h2> {heading} </h2>
+          <h2 className="subheader"> {heading} </h2>
           <p> {description} </p>
         </div>
         <div className="section-content">
