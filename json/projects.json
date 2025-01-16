@@ -64,9 +64,10 @@
           "year": "2023",
           "month": "March"
         },
-        "image": "stress_dueling.png",
+        "image": ["stress_dueling.png"],
         "link": {
-          "href": "https://github.com/LZheng47/Stress-Dueling"
+          "github_repo": "https://github.com/LZheng47/Stress-Dueling",
+          "live_demo": ""
         }
       },
       {
@@ -77,9 +78,10 @@
           "year": "2023",
           "month": "March"
         },
-        "image": "soul_knight_guide.png",
+        "image": ["soul_knight_guide.png"],
         "link": {
-          "href": "https://github.com/LZheng47/SoulKnightGuide"
+          "github_repo": "https://github.com/LZheng47/SoulKnightGuide",
+          "live_demo": ""
         }
       },
       {
@@ -90,9 +92,10 @@
           "year": "2022",
           "month": "April"
         },
-        "image": "china_info.png",
+        "image": ["china_info.png"],
         "link": {
-          "href": "https://github.com/LZheng47/ChinaInfo"
+          "github_repo": "https://github.com/LZheng47/ChinaInfo",
+          "live_demo": ""
         }
       }
     ]

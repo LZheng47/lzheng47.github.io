@@ -5,6 +5,7 @@ import MusicPlayer from "./components/MusicPlayer";
 import Section from "./components/Section";
 import Connect from "./components/Connect.tsx";
 import Latest from "./components/Latest.tsx";
+import Websites from "./components/Websites.tsx";
 
 const navitems = [
   "Connect",
@@ -41,18 +42,32 @@ function App() {
             <MusicPlayer start_time="20:05" end_time="20:25" />
           </div>
         </div>
+        {/* Connect Section */}
         <Section
           heading={projectData.connect.heading}
           description={projectData.connect.description}
         >
-          <Connect platforms={projectData.connect.platforms}/>
+          <Connect platforms={projectData.connect.platforms} />
         </Section>
+
+        {/* Latest Section */}
         <Section
           heading={projectData.latest.heading}
           description={projectData.latest.description}
         >
-          <Latest/>
+          <Latest />
         </Section>
+
+        {/* Websites Section */}
+        <Section
+          heading={projectData.websites.heading}
+          description={projectData.websites.description}
+        >
+          <Websites projects={projectData.websites.projects} />
+        </Section>
+
+        {/* Games Section */}
+        
       </div>
     </>
   );

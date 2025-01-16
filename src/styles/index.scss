@@ -4,6 +4,9 @@
   --tertiary-text-color: red;
   --primary-background-color: #12171d;
   --secondary-background-color: #14202e;
+  --primary-fade-color: 20, 32, 46;
+  --secondary-fade-color: 0,0,0;
+  --tertiary-fade-color: 13, 17, 23;
   --highlight-color: #784beb;
   --header-font-family: "Outfit";
   --text-font-family: "Roboto";
@@ -33,5 +36,31 @@ a {
 #grid {
   margin-left: auto;
   margin-right: auto;
-  width: 75vw;
+  width: 70vw;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; 
+}
+
+::-webkit-scrollbar-track {
+  visibility: hidden;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(140,140,140,0.7);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container:hover::-webkit-scrollbar {
+  opacity: 1;
 }

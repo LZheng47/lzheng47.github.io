@@ -39,12 +39,12 @@ function Latest() {
     <>
       {featuredProjects.map((currProject, index) => (
         <div key={index} className={index == 0 ? "latest-project-div latest-project-div-active" : "latest-project-div latest-project-div-inactive"} onClick={(e) => setClassName(e)}> 
-          <img src={`./images/${currProject.projectType}/${currProject.header.toLowerCase().replaceAll(" ", "_")}/${currProject.image[Math.floor(Math.random() * (currProject.image.length))]}`}></img>
+          <img className="centered-img" src={`./images/${currProject.projectType}/${currProject.header.toLowerCase().replaceAll(" ", "_")}/${currProject.image[Math.floor(Math.random() * (currProject.image.length))]}`}></img>
           <div className="latest-project-content">
-            <h3> {`${currProject.date.year} ${currProject.date.month.substring(0,3)}`} </h3>
+            <h3 className="project-date"> {`${currProject.date.year} ${currProject.date.month.substring(0,3)}`} </h3>
             <div>
               <div className="project-header">
-                <h1> {currProject.header} </h1>
+                <h1 className="project-title"> {currProject.header} </h1>
                 <div className="project-links">
                   {Object.entries(currProject.link).map(([linkType, link]) => /* use Object.entries() to map a dictionary */
                     <a key={linkType} href={link} target="_blank">
@@ -53,9 +53,9 @@ function Latest() {
                   )  }
                 </div>
               </div>
-              <h2> {currProject.tags.join(" | ")} </h2>
+              <h2 className="project-tags"> {currProject.tags.join(" | ")} </h2>
               <div className="latest-hr"></div>
-              <p> {currProject.description} </p>
+              <p className="project-description"> {currProject.description} </p>
             </div>
           </div>
         </div>

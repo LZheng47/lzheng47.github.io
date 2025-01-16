@@ -4,9 +4,10 @@ import "../styles/components/music-player.scss";
 interface Props {
   start_time?: string;
   end_time?: string;
+  live_demo_link?: string;
 }
 
-function MusicPlayer({ start_time, end_time }: Props) {
+function MusicPlayer({ start_time, end_time, live_demo_link }: Props) {
   const [isPlay, setPlay] = useState(false);
   const [isShuffle, setShuffle] = useState(false);
   const [isLoop, setLoop] = useState(false);
@@ -38,6 +39,9 @@ function MusicPlayer({ start_time, end_time }: Props) {
       if (control === "play") {
         if (isPlay) {
           e.target.src = "/images/music/pause.png";
+          if(live_demo_link != undefined){
+            window.open(live_demo_link, "_blank")?.focus();
+          }
         } else {
           e.target.src = "/images/music/play.png";
         }

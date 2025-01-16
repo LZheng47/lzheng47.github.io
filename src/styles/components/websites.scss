@@ -1,0 +1,117 @@
+@import "../../styles/utils.scss";
+/* Websites Section Description */
+#websites .section-desc {
+  text-align: right;
+  align-items: end;
+}
+
+/* Websites Section Header */
+#websites .subheader {
+  background: -webkit-linear-gradient(
+    180deg,
+    var(--tertiary-text-color),
+    var(--highlight-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#websites .section-content {
+  display: grid;
+}
+
+#websites .section-content > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#websites-selected-img-div{
+    box-shadow: 10px 0px 20px 7px rgba(var(--tertiary-fade-color), 0.8);
+}
+
+#websites-content{
+    background: linear-gradient(180deg, rgba(var(--secondary-fade-color), 0.2), rgba(var(--primary-fade-color), 0.9));
+    display:flex;
+    height:70vh;
+    padding:15px;
+}
+
+/* Scrollbar */
+#websites-scrollbar{
+    direction: rtl;
+    flex:2;
+    height:inherit;
+    overflow-y:scroll;
+    padding: 0px 30px 0px 20px;
+}
+
+/* Scrollbar Projects */
+.websites-scrollbar-project{
+    direction:ltr;
+    display:grid;
+    background-color:rgb(var(--tertiary-fade-color));
+    border: 1px solid var(--highlight-color);
+    margin:30px 0px 30px 0px;
+}
+
+/* Scrollbar Projects - Image */
+#websites .centered-img-div{
+    background-color:rgb(var(--tertiary-fade-color));
+}
+
+#websites .centered-img-div .centered-img{
+    opacity:25%;
+}
+
+.websites-scrollbar-project > *{
+    grid-column: 1;
+    grid-row:1;
+}
+
+.websites-scrollbar-project *{
+    color:var(--primary-text-color);
+}
+
+/* Scrollbar Projects - Date */
+.websites-scrollbar-project .project-date{
+    margin-top:5px;
+    padding:10px 10px 0px 30px;
+    font-size:pxToRem(15);
+    opacity:77%;
+}
+
+/* Scrollbar Projects - Title */
+.websites-scrollbar-project .project-title{
+    padding: 0px 25px 0px 25px;
+    font-size:pxToRem(17);
+    opacity:88%;
+}
+
+/* Scrollbar Projects - Tags */
+.websites-scrollbar-project .project-tags{
+    padding: 0px 25px 20px 25px;
+    font-size:pxToRem(11);
+    opacity:77%;
+    font-weight:normal;
+}
+
+/* Selected Content */
+#websites-selected-content{
+    flex:5;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    padding:20px 50px 80px 20px;
+}
+
+#websites-selected-content .project-title{
+    flex:none;
+}
+
+#websites-selected-content .music-ui{
+    margin-top:30px;
+}
+
+#websites-selected-content .project-tags{
+    margin-bottom:15px;
+}
