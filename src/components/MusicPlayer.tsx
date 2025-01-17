@@ -38,12 +38,12 @@ function MusicPlayer({ start_time, end_time, live_demo_link }: Props) {
       );
       if (control === "play") {
         if (isPlay) {
-          e.target.src = "/images/music/pause.png";
+          e.target.src = "./images/music/pause.png";
           if(live_demo_link != undefined){
             window.open(live_demo_link, "_blank")?.focus();
           }
         } else {
-          e.target.src = "/images/music/play.png";
+          e.target.src = "./images/music/play.png";
         }
       }
     }
@@ -66,7 +66,7 @@ function MusicPlayer({ start_time, end_time, live_demo_link }: Props) {
               className={control}
               key={index}
               onClick={(e) => MusicPlayerControl(e, control)}
-              src={"/images/music/" + control + ".png"}
+              src={"./images/music/" + control + ".png"}
             />
           ))}
         </div>

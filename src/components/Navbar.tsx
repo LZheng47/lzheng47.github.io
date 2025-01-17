@@ -16,7 +16,7 @@ function Navbar({ links }: Props) {
         {links.map((link, index) =>
           link == "logo" ? (
             <Nav.Item key={index}>
-              <img className="navlogo" src="/images/logo.png" />
+              <img className="navlogo" src="./images/logo.png" />
             </Nav.Item>
           ) : (
             <Nav.Item key={index}>

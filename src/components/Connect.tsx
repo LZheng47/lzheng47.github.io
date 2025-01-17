@@ -19,7 +19,7 @@ function Connect({ platforms }: Props) {
       {platforms.map((platform, index) => (
         <ConnectCard
           key={index}
-          image={"/images/connect/" + platform.image}
+          image={"./images/connect/" + platform.image}
           url_link={platform.link.href}
           anchorText={platform.header}
         />

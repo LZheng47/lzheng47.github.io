@@ -37,7 +37,7 @@ function App() {
                 </p>
               </div>
               <div id="hero-content-right">
-                <img src="/images/logo.png" />
+                <img src="./images/logo.png" />
               </div>
             </div>
             <MusicPlayer start_time="20:05" end_time="20:25" />
