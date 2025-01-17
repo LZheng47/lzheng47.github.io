@@ -32,7 +32,11 @@
   "latest": {
     "heading": "Latest",
     "description": "Discover my most recent projects and achievements, ranging from unique websites to entertaining games.",
-    "projects": ["websites/projects/0", "websites/projects/0", "websites/projects/0"]
+    "projects": [
+      "websites/projects/0",
+      "websites/projects/0",
+      "websites/projects/0"
+    ]
   },
   "websites": {
     "heading": "Websites",
@@ -46,7 +50,12 @@
           "year": "2023",
           "month": "December"
         },
-        "image": ["bathroom.png", "chill_room.png", "dining_room.png", "living_room.png"],
+        "image": [
+          "bathroom.png",
+          "chill_room.png",
+          "dining_room.png",
+          "living_room.png"
+        ],
         "link": {
           "github_repo": "https://github.com/LZheng47/VR_PenthouseInTheSky",
           "live_demo": "https://lzheng47.github.io/VR_PenthouseInTheSky/"
@@ -99,6 +108,155 @@
         }
       }
     ]
+  },
+  "games": {
+    "heading": "Games",
+    "description": "Check out my game development projects, intertwining creativity and coding. Featuring immersive gameplay and innovative mechanics.",
+    "projects": [
+      {
+        "header": "Penthouse In The Sky",
+        "description": "A virtual reality / simulation world of a penthouse, coded in AFrame and features various 3D models. Inspired by The Penthouse: War in Life K-drama.",
+        "tags": ["A-Frame", "JavaScript", "HTML/CSS"],
+        "date": {
+          "year": "2023",
+          "month": "December"
+        },
+        "image": [
+          "bathroom.png",
+          "chill_room.png",
+          "dining_room.png",
+          "living_room.png"
+        ],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/VR_PenthouseInTheSky",
+          "live_demo": "https://lzheng47.github.io/VR_PenthouseInTheSky/"
+        }
+      },
+      {
+        "header": "Stress Dueling",
+        "description": "2-player duel game made with auditory & image recognition machine learning (Google Teachable Machine) and OOP.",
+        "tags": [
+          "Google Teachable Machine Image & Audio Libraries",
+          "JavaScript",
+          "HTML/CSS"
+        ],
+        "date": {
+          "year": "2023",
+          "month": "March"
+        },
+        "image": ["stress_dueling.png"],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/Stress-Dueling",
+          "live_demo": ""
+        }
+      },
+      {
+        "header": "Soul Knight Guide",
+        "description": "A guide on Soul Knight, a mobile game, showcased using a database & web server through SQL & Java",
+        "tags": ["SQL", "SQLite", "Java", "JavaScript", "HTML/CSS"],
+        "date": {
+          "year": "2023",
+          "month": "March"
+        },
+        "image": ["soul_knight_guide.png"],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/SoulKnightGuide",
+          "live_demo": ""
+        }
+      },
+      {
+        "header": "China Info",
+        "description": "A website that presents interesting information about Chinese culture and geography.",
+        "tags": ["HTML/CSS"],
+        "date": {
+          "year": "2022",
+          "month": "April"
+        },
+        "image": ["china_info.png"],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/ChinaInfo",
+          "live_demo": ""
+        }
+      },
+      {
+        "header": "Penthouse In The Sky TEST TEST",
+        "description": "A virtual reality / simulation world of a penthouse, coded in AFrame and features various 3D models. Inspired by The Penthouse: War in Life K-drama.",
+        "tags": ["A-Frame", "JavaScript", "HTML/CSS"],
+        "date": {
+          "year": "2023",
+          "month": "December"
+        },
+        "image": [
+          "bathroom.png",
+          "chill_room.png",
+          "dining_room.png",
+          "living_room.png"
+        ],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/VR_PenthouseInTheSky",
+          "live_demo": "https://lzheng47.github.io/VR_PenthouseInTheSky/"
+        }
+      },
+      {
+        "header": "Stress Dueling TEST TEST",
+        "description": "2-player duel game made with auditory & image recognition machine learning (Google Teachable Machine) and OOP.",
+        "tags": [
+          "Google Teachable Machine Image & Audio Libraries",
+          "JavaScript",
+          "HTML/CSS"
+        ],
+        "date": {
+          "year": "2023",
+          "month": "March"
+        },
+        "image": ["stress_dueling.png"],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/Stress-Dueling",
+          "live_demo": ""
+        }
+      },
+      {
+        "header": "Soul Knight Guide TEST TEST",
+        "description": "A guide on Soul Knight, a mobile game, showcased using a database & web server through SQL & Java",
+        "tags": ["SQL", "SQLite", "Java", "JavaScript", "HTML/CSS"],
+        "date": {
+          "year": "2023",
+          "month": "March"
+        },
+        "image": ["soul_knight_guide.png"],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/SoulKnightGuide",
+          "live_demo": ""
+        }
+      },
+      {
+        "header": "China Info TEST TEST",
+        "description": "A website that presents interesting information about Chinese culture and geography.",
+        "tags": ["HTML/CSS"],
+        "date": {
+          "year": "2022",
+          "month": "April"
+        },
+        "image": ["china_info.png"],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/ChinaInfo",
+          "live_demo": ""
+        }
+      },
+      {
+        "header": "China Info TEST TEST!!",
+        "description": "A website that presents interesting information about Chinese culture and geography.",
+        "tags": ["HTML/CSS"],
+        "date": {
+          "year": "2022",
+          "month": "April"
+        },
+        "image": ["china_info.png"],
+        "link": {
+          "github_repo": "https://github.com/LZheng47/ChinaInfo",
+          "live_demo": ""
+        }
+      }
+    ]
   }
-
 }

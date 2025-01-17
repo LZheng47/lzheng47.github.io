@@ -40,7 +40,7 @@ function Latest() {
       {featuredProjects.map((currProject, index) => (
         <div key={index} className={index == 0 ? "latest-project-div latest-project-div-active" : "latest-project-div latest-project-div-inactive"} onClick={(e) => setClassName(e)}> 
           <img className="centered-img" src={`./images/${currProject.projectType}/${currProject.header.toLowerCase().replaceAll(" ", "_")}/${currProject.image[Math.floor(Math.random() * (currProject.image.length))]}`}></img>
-          <div className="latest-project-content">
+          <div className="latest-project-content overlay-2">
             <h3 className="project-date"> {`${currProject.date.year} ${currProject.date.month.substring(0,3)}`} </h3>
             <div>
               <div className="project-header">

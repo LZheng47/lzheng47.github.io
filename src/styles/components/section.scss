@@ -38,10 +38,10 @@
   width: 100%;
 }
 
-/* Text Shadow for Project Title, Tags, Description */
+/* Text Shadow for Project Title, Tags, Description, Date */
 .project-title,
 .project-tags,
-.project-description {
+.project-description, .project-date {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
 }
 
@@ -88,4 +88,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Overlays */
+.overlay-1{
+  background: linear-gradient(217deg, rgb(var(--primary-fade-color)),rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg,var(--highlight-color), rgba(149, 255, 149, 0) 70.71%),
+    linear-gradient(336deg, var(--tertiary-text-color), rgba(0, 0, 255, 0) 70.71%);
+  
+}
+
+.overlay-2{
+  background: linear-gradient(180deg, rgba(var(--secondary-fade-color), 0), rgba(var(--primary-fade-color)));
+}
+
+.overlay-3{
+  background: linear-gradient(180deg, rgba(var(--secondary-fade-color), 0.4), rgba(var(--primary-fade-color), 0.5));
 }

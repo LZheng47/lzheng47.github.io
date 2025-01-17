@@ -10,7 +10,7 @@ function ConnectCard({image, url_link, anchorText}: Props){
     return (
         <>
             <div className="connect-card">
-                <a href={url_link}>
+                <a href={url_link} target="_blank">
                     <img src={image}/>
                     <h3> {anchorText} </h3>
                 </a>

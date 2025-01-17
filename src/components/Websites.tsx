@@ -1,30 +1,21 @@
 import { useState } from "react";
 import "../styles/components/websites.scss";
 import MusicPlayer from "./../components/MusicPlayer";
+import project from "./../helper.tsx";
 
 /* Types & Interfaces */
-type project = {
-  header: string;
-  description: string;
-  tags: string[];
-  date: { [key: string]: string };
-  image: string[];
-  link: { [key: string]: string };
-};
-
 interface Props {
   projects: project[];
 }
 
 function Websites({ projects }: Props) {
-    /* Use States */
-    const [selectedWebsiteIndex, setSelectedWebsiteIndex] = useState(0); // index of selected website, default 0
+  /* Use States */
+  const [selectedWebsiteIndex, setSelectedWebsiteIndex] = useState(0); // index of selected website, default 0
 
-    /* Event Handlers */
-    function handleScrollbarClick(index:number){
-        setSelectedWebsiteIndex(index);
-    }
-
+  /* Event Handlers */
+  function handleScrollbarClick(index: number) {
+    setSelectedWebsiteIndex(index);
+  }
 
   return (
     <>
@@ -40,35 +31,42 @@ function Websites({ projects }: Props) {
       </div>
 
       {/* Scrollbar & selected project - In Front */}
-      <div id="websites-content">
+      <div id="websites-content" className="overlay-2">
         {/* Left Scrollbar */}
         <div id="websites-scrollbar">
           {projects.map((currProject, index) => (
             <div
               key={"websites-project-" + index}
-              className={`websites-scrollbar-project${index==selectedWebsiteIndex ? " websites-scrollbar-project-active" : ""}`}
-              onClick={() => (handleScrollbarClick(index))}
+              className={`websites-scrollbar-project${
+                index == selectedWebsiteIndex
+                  ? " websites-scrollbar-project-active"
+                  : ""
+              }`}
+              onClick={() => handleScrollbarClick(index)}
             >
               {/* !TEMP - Replace image */}
-              <div className="centered-img-div">
-                <img
-                  className="centered-img"
-                  src={`./images/websites/${currProject.header
+              <div
+                className="centered-img-div"
+                style={{
+                  backgroundImage: `url('./images/websites/${currProject.header
                     .toLowerCase()
-                    .replaceAll(" ", "_")}/${currProject.image[0]}`}
-                ></img>
-              </div>
-              <div>
+                    .replaceAll(" ", "_")}/${currProject.image[0]}'`,
+                }}
+              >
                 {/* Scrollbar Project Date */}
-                <h3 className="project-date">
-                  {currProject.date.year +
-                    " " +
-                    currProject.date.month.substring(0, 3)}
-                </h3>
-                {/* Scrollbar Project Title */}
-                <h1 className="project-title">{currProject.header}</h1>
-                {/* Scrollbar Project Tags */}
-                <h2 className="project-tags">{currProject.tags.join(" | ")}</h2>
+                <div className="overlay-3">
+                  <h3 className="project-date">
+                    {currProject.date.year +
+                      " " +
+                      currProject.date.month.substring(0, 3)}
+                  </h3>
+                  {/* Scrollbar Project Title */}
+                  <h1 className="project-title">{currProject.header}</h1>
+                  {/* Scrollbar Project Tags */}
+                  <h2 className="project-tags">
+                    {currProject.tags.join(" | ")}
+                  </h2>
+                </div>
               </div>
             </div>
           ))}

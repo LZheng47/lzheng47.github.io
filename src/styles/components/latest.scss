@@ -26,7 +26,6 @@
 .latest-project-content {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, rgba(var(--secondary-fade-color), 0.1), rgba(var(--primary-fade-color), 0.9));
 }
 
 /* Project Title, Tags, & Description */
@@ -54,7 +53,7 @@
 
 /* Date - Active Div */
 .latest-project-div-active .project-date {
-  color: var(--secondary-text-color);
+  color: var(--tertiary-text-color);
   writing-mode: unset;
   text-orientation: unset;
   text-align: right;

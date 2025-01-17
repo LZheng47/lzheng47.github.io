@@ -1,0 +1,91 @@
+@import "../utils.scss";
+
+#games .section-content {
+  position: relative;
+  height: 70vh;
+}
+
+/* Slider */
+.slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal-width columns */
+  grid-template-rows: 1fr 1fr; /* 2 equal-height rows */
+  grid-gap: 15px;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+/* Slider Project Cards */
+.slider-project-card {
+  display: grid;
+  background-color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-project-card > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.slider-project-card * {
+  text-align: center;
+}
+
+/* Slider Project Card Content */
+.slider-project-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:20px;
+  opacity: 0%;
+}
+
+/* Slider Project Card Content */
+.slider-project-card-content:hover {
+  opacity:100%;
+}
+
+/* Slider Project Card - Date */
+.slider-project-card .project-date {
+  font-size: pxToRem(17);
+  margin: 10px 0px 0px 0px;
+}
+
+/* Slider Project Card Content - Title */
+.slider-project-card-content .project-title {
+  font-size: pxToRem(34);
+  margin: 0;
+  flex: none;
+}
+
+/* Slider Project Card - Tags */
+.slider-project-card-content .project-tags {
+  font-size: pxToRem(18);
+  margin: 0px 0px 0px 0px;
+}
+
+/* Slider Project Card - Description */
+.slider-project-card-content .project-description {
+  font-size: pxToRem(15);
+  margin: 10px 0px 0px 0px;
+}
+
+/* Slider Controls */
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

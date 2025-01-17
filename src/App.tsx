@@ -6,6 +6,7 @@ import Section from "./components/Section";
 import Connect from "./components/Connect.tsx";
 import Latest from "./components/Latest.tsx";
 import Websites from "./components/Websites.tsx";
+import Games from "./components/Games.tsx";
 
 const navitems = [
   "Connect",
@@ -67,7 +68,13 @@ function App() {
         </Section>
 
         {/* Games Section */}
-        
+        <Section
+          heading={projectData.games.heading}
+          description={projectData.games.description}
+        >
+          <Games projects={projectData.games.projects}/>
+        </Section>
+
       </div>
     </>
   );
